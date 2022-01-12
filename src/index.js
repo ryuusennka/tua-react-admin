@@ -2,26 +2,33 @@
  * @Author: ryuusennka
  * @Date: 2021-07-09 06:08:37
  * @LastEditors: ryuusennka
- * @LastEditTime: 2021-07-09 09:16:14
+ * @LastEditTime: 2021-09-14 12:23:30
  * @FilePath: /tua-react-admin/src/index.js
  * @Description:
  */
-import React from 'react';
-import ReactDOM from 'react-dom';
-import reportWebVitals from './reportWebVitals';
-
 import './assets/boxicons-2.0.7/css/boxicons.min.css';
 import './assets/css/grid.css';
 import './assets/css/index.css';
+import './assets/css/theme.css';
 
 import Layout from './components/layout/layout';
+import { Provider } from 'react-redux';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { createStore } from 'redux';
+import reportWebVitals from './reportWebVitals';
+import rootReducer from './redux/reducer';
 
-document.title = `Tua CRM`;
+const store = createStore(rootReducer);
+
+document.title = `Admin CRM`;
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Layout />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <Layout />
+    </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 );
 
