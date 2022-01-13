@@ -1,9 +1,9 @@
 /*
  * @Author: ryuusennka
  * @Date: 2021-07-09 06:08:37
- * @LastEditors: ryuusennka
- * @LastEditTime: 2021-09-14 12:23:30
- * @FilePath: /tua-react-admin/src/index.js
+ * @LastEditors   : ryuusennka
+ * @LastEditTime  : 2022-01-13 14:19:28
+ * @FilePath      : /tua-react-admin/src/index.js
  * @Description:
  */
 import './assets/boxicons-2.0.7/css/boxicons.min.css';

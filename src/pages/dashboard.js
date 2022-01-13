@@ -5,9 +5,9 @@ import { useDispatch, useSelector } from 'react-redux';
 /*
  * @Author: ryuusennka
  * @Date: 2021-07-09 07:10:22
- * @LastEditors: ryuusennka
- * @LastEditTime: 2021-08-28 03:30:35
- * @FilePath: /tua-react-admin/src/pages/dashboard.js
+ * @LastEditors   : ryuusennka
+ * @LastEditTime  : 2022-01-13 14:24:53
+ * @FilePath      : /tua-react-admin/src/pages/dashboard.js
  * @Description:
  */
 import Badge from '../components/badge/Badge';
@@ -175,7 +175,7 @@ const Dashboard = () => {
   return (
     <>
       <div>
-        <h2 className="page-header">Dashboard</h2>
+        <h2 className="page-header">控制台</h2>
         <div className="row">
           <div className="col-6">
             <div className="row">
@@ -209,7 +209,7 @@ const Dashboard = () => {
           <div className="col-4">
             <div className="card">
               <div className="card__header">
-                <h3>Top customers</h3>
+                <h3>顶级客户</h3>
               </div>
               <div className="card__body">
                 <Table
@@ -227,7 +227,7 @@ const Dashboard = () => {
           <div className="col-8">
             <div className="card">
               <div className="card__header">
-                <h3>latest orders</h3>
+                <h3>最新订单</h3>
               </div>
               <div className="card__body">
                 <Table
